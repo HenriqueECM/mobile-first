@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 5px;
+    height: 100vh;
+    padding: 10px;
+    grid-template-areas: 
+        "header header header"
+        "sidebar content-1 content-1"
+        "sidebar content-2 content-3"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(124, 55, 163);
+    text-align: center;
+    color: white;
+    padding: 70px;
+    font-size: 50px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: darkgreen;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.content-1 {
+    grid-area: content-1;
+    background-color: rgb(192, 30, 30);
+    color: #ffffff;
+    text-align: center;
+    padding: 200px;
+    font-size: 50px;
+}
+
+.content-2 {
+    grid-area: content-2;
+    background-color: rgb(201, 0, 151);
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+}
+
+.content-3 {
+    grid-area: content-3;
+    background-color: rgb(6, 95, 211);
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(65, 65, 65);
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+}

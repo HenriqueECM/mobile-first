@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #28b1c9;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 2fr 2fr;
+    height: 100vh;
+    padding: 10px;
+    grid-template-areas: 
+        "content-4 titulo1 titulo2 titulo3"
+        "sidebar1 content-5 content-5 sidebar2"
+        "sidebar1 content-6 content-7 sidebar2";
+}
+
+.titulo1 {
+    grid-area: titulo1;
+    background-color: #39a2ed;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 100px;
+
+}
+
+.titulo2 {
+    grid-area: titulo2;
+    background-color: #14c4a1;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 100px;
+}
+
+.titulo3 {
+    grid-area: titulo3;
+    background-color: #32332e;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 100px;
+}
+
+.sidebar1 {
+    grid-area: sidebar1;
+    background-color: #4d5f85;
+    color: white;
+    font-size: 30px;
+    align-content: center;
+    padding-left: 100px;
+}
+
+.content-4 {
+    grid-area: content-4;
+    background-color: #32332e;
+    color: white;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.content-5 {
+    grid-area: content-5;
+    background-color:#32332e;
+    color: white;
+    font-size: 30px;
+    padding: 90px;
+    line-height: 40px
+}
+
+.content-6 {
+    grid-area: content-6;
+    background-color:#39a2ed;
+    color: white;
+    font-size: 30px;
+    padding: 60px;
+    line-height: 40px
+}
+
+.content-7 {
+    grid-area: content-7;
+    background-color:#14c4a1;
+    color: white;
+    font-size: 30px;
+    padding: 60px;
+    line-height: 40px
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    background-color: #4d5f85;
+    color: white;
+    font-size: 30px;
+    align-content: center;
+    padding-left: 100px;
+}
